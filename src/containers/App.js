@@ -33,7 +33,7 @@ class App extends Component {
     const filteredRobots = robots.filter(robot =>{
       return robot.name.toLowerCase().includes(searchField.toLowerCase());
     })
-    return !isPending ?
+    return isPending ?
       <h1>Loading</h1> :
       (
         <div className='tc'>
